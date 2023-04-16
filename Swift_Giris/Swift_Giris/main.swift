@@ -9,7 +9,7 @@ import Foundation
 
 print("Hello, World!")
 print("Hello!")
-
+// variables
 
 
 var FirstNumber :Int
@@ -41,6 +41,85 @@ print(stringType)
 
 //Optional olması için
 var age : Int?
-age = 19
+age = 100
 print("\n",age!)//ünlem olmaz ise optional(deger) şeklinde yazdırır
 
+//standart programlama yapıları
+
+if age! <= 19
+{
+    print("Bu bir çocuktur")
+    
+}
+else if age! > 19 && age! < 50
+{
+    print("bu bir çocuk değildir")
+}
+else
+{
+    print("0 veya 50 den büyük sayı girildi")
+}
+
+var optionalString : String? = "Hello World, writing some safety code"
+
+
+if optionalString != nil
+{
+    print(optionalString!)
+}
+//optionalString boş olsaydı buraya girmezdi ve str yazdırmazdı, dolu olursa girer ve yazdırır ünlem koymana gerek kalmaz.
+if let str = optionalString
+{
+    print(str)
+}
+else
+{
+    print("Değer boş olamaz")
+}
+
+//lab
+var userOperationDay = 7
+var userOperationHour = 15
+
+if userOperationDay > 0 && userOperationDay <= 7
+{
+    if userOperationDay <= 5
+    {
+        if userOperationHour >= 9 && userOperationHour <= 18
+        {
+            print("Success")
+        }
+        
+    }
+    else
+    {
+        print("Try again in ",-userOperationDay + 7, " days at 9:00" )
+    }
+        
+}
+
+var ages = 24
+
+switch ages
+{
+case 10:
+    print("yaş 10")
+case 15:
+    print("yaş 15")
+case let a where a > 18 && a < 25:
+    print(a)
+    
+default:
+        print("defaut")
+}
+
+//while / repeat while do while gibi ::)) c ve c# bilmenin ekmeğini yiyorum
+
+for i in 0...10
+{
+    print(i)
+}
+for i in 0..<10
+{
+    print(i)
+}
