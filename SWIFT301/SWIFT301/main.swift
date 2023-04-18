@@ -9,80 +9,127 @@ import Foundation
 
 //Object Oriented Programming
 //aynı dosyada birden fazla class olabilir
+//
+//class Personnel
+//{
+////    strong değişke
+//    var Name : String?
+////    weak olması için başına weak
+//      var Surname : String?
+//    var IdentityNo : Int?
+//
+//     var getPrivilige = Privilige()
+//}
+//class Privilige
+//{
+//    var Role : String?
+//}
+//
+//var person1 = Personnel()
+//person1.Name = "Yiğitcan"
+//person1.Surname = "Ölmez"
+//person1.IdentityNo = 213213214
+//person1.getPrivilige.Role = "deneme"
+//
+//print(person1.Name!, person1.Surname!, person1.IdentityNo!, person1.getPrivilige.Role!)
+//
+////encapsulation değerler üzerinde oynama getter setter erişimleri vs düşün
+//
+//class Square : Personnel
+//{
+//
+//
+//    var kenarIc : Float = 0
+//    var cevreIc : Float = 0
+//
+//
+//    var kenar : Float
+//    {
+//        get
+//        {
+//         return kenarIc
+//        }
+//        set(yeniKenar)
+//        {
+//            if yeniKenar < 5
+//            {
+//                kenarIc = yeniKenar
+//            }
+//            else{
+//                kenarIc = 0
+//            }
+//            cevreIc = kenarIc * 4
+//        }
+//    }
+//
+//
+//    var cevre : Float
+//    {
+//        get
+//        {
+//            return kenarIc * 4
+//        }
+//        set
+//        {
+//            kenarIc  = newValue / 4
+//        }
+//    }
+//
+//}
+//
+//
+//kare.kenar = 10
+//kare.cevre = 5
+//
+//
+//print(kare.kenar, kare.cevre)
+//
+//
+//
+//
+//
+//func WriteListProp()
+//{
+//    var list = [1,23,4,8,9,20,4,10,15,3,1,1,1,40]
+//    var minNumber = list[0]
+//    var maxNumber = list[0]
+//    var getAverage = 0
+//
+//
+//    for i in list
+//    {
+//        if(i > maxNumber)
+//        {
+//         maxNumber = i
+//        }
+//
+//        if(i < minNumber)
+//        {
+//            minNumber = i
+//        }
+//        getAverage += i
+//
+//    }
+//    getAverage = list.reduce(0){$0 + $1} / list.count
+//
+//    print("En kucuk sayi \(minNumber)")
+//    print("En buyuk sayi \(maxNumber)")
+//    print("Ortalama \(getAverage)")
+//
+//}
+//
+//WriteListProp()
 
-class Personnel
+
+func getParameter(a kisaKenar : Int, b uzunKenar : Int, _ p2 : String) -> [Int]
 {
-//    strong değişke
-    var Name : String?
-//    weak olması için başına weak
-      var Surname : String?
-    var IdentityNo : Int?
+    let alan = kisaKenar * uzunKenar
+    let cevre = 2 * (kisaKenar + uzunKenar)
     
-     var getPrivilige = Privilige()
-}
-class Privilige
-{
-    var Role : String?
+    
+    return [alan,cevre]
 }
 
-var person1 = Personnel()
-person1.Name = "Yiğitcan"
-person1.Surname = "Ölmez"
-person1.IdentityNo = 213213214
-person1.getPrivilige.Role = "deneme"
+ var deneme = getParameter(a: 50, b: 90, "selam")
 
-print(person1.Name!, person1.Surname!, person1.IdentityNo!, person1.getPrivilige.Role!)
-
-//encapsulation değerler üzerinde oynama getter setter erişimleri vs düşün
-
-class Square : Personnel
-{
-    
-    var kenarIc : Float = 0
-    var cevreIc : Float = 0
-    
-    
-    var kenar : Float
-    {
-        get
-        {
-         return kenarIc
-        }
-        set(yeniKenar)
-        {
-            if yeniKenar < 5
-            {
-                kenarIc = yeniKenar
-            }
-            else{
-                kenarIc = 0
-            }
-            cevreIc = kenarIc * 4
-        }
-    }
-    
-    
-    var cevre : Float
-    {
-        get
-        {
-            return kenarIc * 4
-        }
-        set
-        {
-            kenarIc  = newValue / 4
-        }
-    }
-}
-
-var kare = Square()
-
-
-
-kare.kenar = 10
-kare.cevre = 5
-
-print(kare.kenar, kare.cevre)
-
-
-
+print(deneme)
