@@ -43,38 +43,92 @@ import Foundation
 //
 //print(personnelIds)
 
-//lab
+////lab
+//
+//var fruitList = [String]()
+//
+//fruitList = ["Apple", "Pineapple","Banana","Orange","Melon","WaterMelon"]
+//
+//for i in 0..<fruitList.count
+//{
+//   print("\(i) : \(fruitList[i])")
+//
+//}
+////index yapısı yoktur
+//
+//var letters = Set<Character>()
+//letters.insert("a")
+//letters.insert("a")
+//letters.insert("b")
+//letters.insert("c")
+//letters.insert("d")
+//letters.insert("k")
+//letters.removeAll()
+//print(letters)
+//
+//var fruit : Set<String> = ["Apple","Banana"]
+//var fruits : Set = ["Apple","Banana"]
+//
+//if fruit.count>0
+//{
+//    print("Dolu")
+//    print(fruit.contains("Apple"))
+//    print(fruits)
+//}
+//
+//var listed = fruit.sorted()
+//
+//var dictionary : [String : String]?
+//
+//print(dictionary)
+//
+//var dictionaries = [String : String]()
+//dictionaries = [
+//    "1" : "selamlar",
+//    "2" : "merhaba"
+//]
+//print(dictionaries)
+//
+//var Kisiler = [[String : String]]()
+//
+//var firstPerson = [
+//    "Ad" : "Ahmet",
+//    "Soyad" : "Deneme"]
+//
+//Kisiler.append(firstPerson)
+//var secondPerson = [
+//    "Ad" : "Mehmet",
+//    "Soyad" : "Dtrying"]
+//Kisiler.append(secondPerson)
+//
+//print(Kisiler)
+//
+//
+//for i in Kisiler
+//{
+//    print("Ad : \(i["Ad"]!)")
+//    print("Soyad : \(i["Soyad"]!)")
+//}
+//
+//var numbers = [1,2,3,4,5,6,7,8,9]
+//var maddeBasliker = [String]()
+//
+//maddeBasliker = numbers.map{(sayi) -> String in
+//    return "\(sayi) -)"
+//}
+//
+//maddeBasliker = numbers.map{sayi in return "\(sayi) -)"}
+//
+//
+//maddeBasliker = numbers.map({ "\($0) -4)"})
 
-var fruitList = [String]()
 
-fruitList = ["Apple", "Pineapple","Banana","Orange","Melon","WaterMelon"]
+//let mapScores : [Int?] = scores.map{str in  Int(str)}
 
-for i in 0..<fruitList.count
-{
-   print("\(i) : \(fruitList[i])")
-    
-}
-//index yapısı yoktur
+//print(mapScores)
 
-var letters = Set<Character>()
-letters.insert("a")
-letters.insert("a")
-letters.insert("b")
-letters.insert("c")
-letters.insert("d")
-letters.insert("k")
-letters.removeAll()
-print(letters)
-
-var fruit : Set<String> = ["Apple","Banana"]
-var fruits : Set = ["Apple","Banana"]
-
-if fruit.count>0
-{
-    print("Dolu")
-    print(fruit.contains("Apple"))
-    print(fruits)
-}
-
-var listed = fruit.sorted()
-
+//let scores = ["1", "2" , "üç"]
+//
+//let compactMap :[Int] = scores.compactMap{str in  Int(str)}
+//
+//print(compactMap)
