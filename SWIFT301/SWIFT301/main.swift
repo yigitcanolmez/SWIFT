@@ -214,51 +214,88 @@ import Foundation
 //print("En düşük sayı : \(getValues.dusuk) \nEn büyük sayı : \(getValues.yuksek) \nOrtalam ise : \(getValues.toplam)")
 //print("En düşük sayı : \(getValues2.dusuk) \nEn büyük sayı : \(getValues2.yuksek) \nOrtalam ise : \(getValues2.toplam)")
 
-func closure(c: () -> ())
-{
-    c()
-    print("denme")
+//func closure(c: () -> ())
+//{
+//    c()
+//    print("denme")
+//
+//}
+////ne için kullanılıyor? daha esnek kullanabilmek için :D ?
+//closure(c: {
+//    print("denme")
+//})
+//
+//
+//func learningClosure(p closureMetot : (_ parameter : Int) -> ())
+//{
+//    var d = 23
+//
+//    closureMetot(d)
+//
+//}
+//
+//learningClosure(p: {
+//    deger in
+//
+//    print(deger)
+//})
+//
+//learningClosure(){
+//    deger in
+//
+//    print(deger)
+//}
+//
+//
+//
+//
+//func learningClosure(p closureMetot : (_ parameter : Int) -> (), p2 closureMetot2 : (_ parameter : Int) -> ())
+//{
+//    var d = 23
+//    var d2 = 25
+//    closureMetot(d)
+//    closureMetot2(d2)
+//
+//}
+//
 
-}
-//ne için kullanılıyor? daha esnek kullanabilmek için :D ?
-closure(c: {
-    print("denme")
-})
+//func funcs(p1 : Int)
+//{
+//    print(p1)
+//}
+//func funcClosure(fonk : (Int) -> ())
+//{
+//    let d = 3
+//    fonk(d)
+//}
+//
+//
+//funcClosure(fonk : funcs)
 
-
-func learningClosure(p closureMetot : (_ parameter : Int) -> ())
-{
-    var d = 23
-    
-    closureMetot(d)
-    
-}
-
-learningClosure(p: {
-    deger in
-    
-    print(deger)
-})
-
-learningClosure(){
-    deger in
-    
-    print(deger)
-}
-
-
-
-
-func learningClosure(p closureMetot : (_ parameter : Int) -> (), p2 closureMetot2 : (_ parameter : Int) -> ())
-{
-    var d = 23
-    var d2 = 25
-    closureMetot(d)
-    closureMetot2(d2)
-    
-}
-
-
-
-
-
+//
+//func makeOperation(islem : String) -> (Float, Float) -> Float
+//{
+//    func operation1(a : Float , b : Float) -> Float
+//    {
+//        return a + b
+//    }
+//    func operation2(a : Float , b : Float) -> Float
+//    {
+//        return a - b
+//    }
+//
+//    if islem == "Topla"
+//    {
+//        return operation1
+//    }
+//   else
+//    {
+//        return operation2
+//    }
+//}
+//
+//let doSth = makeOperation(islem: "topla")
+//
+//var result = doSth(4,5)
+//
+//print(result)
