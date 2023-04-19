@@ -154,62 +154,111 @@ import Foundation
 //print("Meduladan gelen doktorun adı \(getPerson.Name!) soyadı \(getPerson.Surname!)")
 //
 //print(deneme)
+//
+//
+//var list = [Int]()
+//list = [50,24,52,66,87,89,45,54,64,36,27 ]
+//
+//func calculateAverage(puanlar p1: [Int]) -> (dusuk: Int, yuksek :Int , toplam: Int)
+//{
+//    var dusuk = p1[0]
+//    var yuksek = p1[0]
+//    var ortalama  = 0
+//
+//    for i in p1
+//    {
+//        if(dusuk < i)
+//        {
+//            dusuk = i
+//        }
+//        if(yuksek > i)
+//        {
+//            yuksek = i
+//        }
+//
+//    }
+//
+//    ortalama = p1.reduce(0){$0 + $1} / p1.count
+//
+//    return (dusuk, yuksek, ortalama)
+//
+//}
+//func calculateAverage(puanlar p1: Int...) -> (dusuk: Int, yuksek :Int , toplam: Int)
+//{
+//    var dusuk = p1[0]
+//    var yuksek = p1[0]
+//    var ortalama  = 0
+//
+//    for i in p1
+//    {
+//        if(i < dusuk)
+//        {
+//            dusuk = i
+//        }
+//        if(i > yuksek)
+//        {
+//            yuksek = i
+//        }
+//
+//    }
+//
+//    ortalama = p1.reduce(0){$0 + $1} / p1.count
+//
+//    return (dusuk, yuksek, ortalama)
+//
+//}
+//
+//let getValues = calculateAverage(puanlar: list)
+//let getValues2 = calculateAverage(puanlar: 1,24,654,6,4,6,1,1)
+//
+//print("En düşük sayı : \(getValues.dusuk) \nEn büyük sayı : \(getValues.yuksek) \nOrtalam ise : \(getValues.toplam)")
+//print("En düşük sayı : \(getValues2.dusuk) \nEn büyük sayı : \(getValues2.yuksek) \nOrtalam ise : \(getValues2.toplam)")
 
-
-var list = [Int]()
-list = [50,24,52,66,87,89,45,54,64,36,27 ]
-
-func calculateAverage(puanlar p1: [Int]) -> (dusuk: Int, yuksek :Int , toplam: Int)
+func closure(c: () -> ())
 {
-    var dusuk = p1[0]
-    var yuksek = p1[0]
-    var ortalama  = 0
+    c()
+    print("denme")
+
+}
+//ne için kullanılıyor? daha esnek kullanabilmek için :D ?
+closure(c: {
+    print("denme")
+})
+
+
+func learningClosure(p closureMetot : (_ parameter : Int) -> ())
+{
+    var d = 23
     
-    for i in p1
-    {
-        if(dusuk < i)
-        {
-            dusuk = i
-        }
-        if(yuksek > i)
-        {
-            yuksek = i
-        }
-        
-    }
-    
-    ortalama = p1.reduce(0){$0 + $1} / p1.count
-    
-    return (dusuk, yuksek, ortalama)
+    closureMetot(d)
     
 }
-func calculateAverage(puanlar p1: Int...) -> (dusuk: Int, yuksek :Int , toplam: Int)
+
+learningClosure(p: {
+    deger in
+    
+    print(deger)
+})
+
+learningClosure(){
+    deger in
+    
+    print(deger)
+}
+
+
+
+
+func learningClosure(p closureMetot : (_ parameter : Int) -> (), p2 closureMetot2 : (_ parameter : Int) -> ())
 {
-    var dusuk = p1[0]
-    var yuksek = p1[0]
-    var ortalama  = 0
-    
-    for i in p1
-    {
-        if(i < dusuk)
-        {
-            dusuk = i
-        }
-        if(i > yuksek)
-        {
-            yuksek = i
-        }
-        
-    }
-    
-    ortalama = p1.reduce(0){$0 + $1} / p1.count
-    
-    return (dusuk, yuksek, ortalama)
+    var d = 23
+    var d2 = 25
+    closureMetot(d)
+    closureMetot2(d2)
     
 }
 
-let getValues = calculateAverage(puanlar: list)
-let getValues2 = calculateAverage(puanlar: 1,24,654,6,4,6,1,1)
 
-print("En düşük sayı : \(getValues.dusuk) \nEn büyük sayı : \(getValues.yuksek) \nOrtalam ise : \(getValues.toplam)")
-print("En düşük sayı : \(getValues2.dusuk) \nEn büyük sayı : \(getValues2.yuksek) \nOrtalam ise : \(getValues2.toplam)")
+
+
+
