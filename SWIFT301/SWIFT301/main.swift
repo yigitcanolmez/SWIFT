@@ -301,24 +301,67 @@ import Foundation
 //print(result)
 
 //Initilazer belleğe çıkartma işlemi
+//
+//class Square
+//{
+//    var length : Int
+//
+//    init(len : Int)
+//    {
+//     length = len
+//    }
+//    init()
+//    {
+//     length = 0
+//    }
+//}
+//
+//var getSquareLenght = Square(len: 15)
+//var getSquareLenght1 = Square()
+//
+//
+//print(getSquareLenght.length)
+//print(getSquareLenght1.length)
 
-class Square
-{
-    var length : Int
-    
-    init(len : Int)
-    {
-     length = len
-    }
-    init()
-    {
-     length = 0
-    }
-}
 
-var getSquareLenght = Square(len: 15)
-var getSquareLenght1 = Square()
-
-
-print(getSquareLenght.length)
-print(getSquareLenght1.length)
+//class Personnel
+//{
+//    var Ad : String
+//    var IkinciAd : String?
+//    var SoyAd : String
+//    var KimlikNo : Int
+//    var SicilNo : Int
+//    
+//    init(ad : String, ikinciAd : String? = nil, soyad : String, kimlik : Int, sicilNo : Int )
+//    {
+//        Ad = ad
+//        SoyAd = soyad
+//        IkinciAd = ikinciAd
+//        KimlikNo = kimlik
+//        SicilNo = sicilNo
+//    }
+//    
+//    func BilgileriYazdır()
+//    {
+//        print("Kullanıcı, Adı : \(Ad) \nİkinci Adı : \(IkinciAd!) \nSoyad : \(SoyAd) \nKimlik Numarası : \(KimlikNo) \nSicil Numarası : \(SicilNo) \n")
+//    }
+//}
+// 
+//var PersonnelList = [Personnel]()
+//
+//var person1 = Personnel(ad: "Eda",ikinciAd: "Erdem" ,soyad: "Ölmez", kimlik: 123123, sicilNo: 12312)
+//var person2 = Personnel(ad: "Ateş", ikinciAd: "Lefter", soyad: "Ölmez", kimlik: 12312, sicilNo: 1222)
+//var person3 = Personnel(ad: "Haydar", ikinciAd: "Ateş", soyad: "Ölmez", kimlik: 12312, sicilNo: 1222)
+//var person4 = Personnel(ad: "Eda", ikinciAd: "Şengül", soyad: "Ölmez", kimlik: 12312, sicilNo: 1222)
+//
+//
+//PersonnelList.append(person1)
+//PersonnelList.append(person2)
+//PersonnelList.append(person3)
+//PersonnelList.append(person4)
+//
+//for i in PersonnelList
+//{
+//    i.BilgileriYazdır()
+//}
+//
