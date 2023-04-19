@@ -299,3 +299,26 @@ import Foundation
 //var result = doSth(4,5)
 //
 //print(result)
+
+//Initilazer belleğe çıkartma işlemi
+
+class Square
+{
+    var length : Int
+    
+    init(len : Int)
+    {
+     length = len
+    }
+    init()
+    {
+     length = 0
+    }
+}
+
+var getSquareLenght = Square(len: 15)
+var getSquareLenght1 = Square()
+
+
+print(getSquareLenght.length)
+print(getSquareLenght1.length)
