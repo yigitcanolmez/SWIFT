@@ -119,17 +119,38 @@ import Foundation
 //}
 //
 //WriteListProp()
-
-
-func getParameter(a kisaKenar : Int, b uzunKenar : Int, _ p2 : String) -> [Int]
-{
-    let alan = kisaKenar * uzunKenar
-    let cevre = 2 * (kisaKenar + uzunKenar)
-    
-    
-    return [alan,cevre]
-}
-
- var deneme = getParameter(a: 50, b: 90, "selam")
-
-print(deneme)
+//
+//
+//func getParameter(a kisaKenar : Int, b uzunKenar : Int, _ p2 : String) -> [Int]
+//{
+//    let alan = kisaKenar * uzunKenar
+//    let cevre = 2 * (kisaKenar + uzunKenar)
+//    
+//    
+//    return [alan,cevre]
+//}
+//
+//class Personnel
+//{
+//    var Name : String?
+//    var Surname :  String?
+//    
+//}
+//
+//func PersonnelMaker() -> Personnel
+//{
+//    let person = Personnel()
+//    
+//    person.Name = "Yiğitcan"
+//    person.Surname = "Ölmez"
+//    
+//    return person
+//}
+//
+//
+// var deneme = getParameter(a: 50, b: 90, "selam")
+//var getPerson = PersonnelMaker()
+//
+//print("Meduladan gelen doktorun adı \(getPerson.Name!) soyadı \(getPerson.Surname!)")
+//
+//print(deneme)
