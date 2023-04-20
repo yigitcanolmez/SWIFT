@@ -3,4 +3,54 @@
    uuid = "7678CFB5-C4F1-47A7-BB88-D61E8F0CE4D9"
    type = "1"
    version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "D1C4E65D-8502-4B6A-B27B-17E5C752E7E9"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SWIFT301/main.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "370"
+            endingLineNumber = "370"
+            landmarkName = "Cinsiyet"
+            landmarkType = "13">
+            <Locations>
+               <Location
+                  uuid = "D1C4E65D-8502-4B6A-B27B-17E5C752E7E9 - f136d8998f244a12"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "SWIFT301.Cinsiyet.init(rawValue: Swift.String) -&gt; Swift.Optional&lt;SWIFT301.Cinsiyet&gt;"
+                  moduleName = "SWIFT301"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/yigitcanolmez/Desktop/SWIFT/SWIFT301/SWIFT301/main.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "373"
+                  endingLineNumber = "373"
+                  offsetFromSymbolStart = "136">
+               </Location>
+               <Location
+                  uuid = "D1C4E65D-8502-4B6A-B27B-17E5C752E7E9 - 60d5db3bc5844b9e"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "SWIFT301.Cinsiyet.rawValue.getter : Swift.String"
+                  moduleName = "SWIFT301"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/yigitcanolmez/Desktop/SWIFT/SWIFT301/SWIFT301/main.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "373"
+                  endingLineNumber = "373"
+                  offsetFromSymbolStart = "128">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
 </Bucket>

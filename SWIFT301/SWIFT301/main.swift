@@ -331,7 +331,7 @@ import Foundation
 //    var SoyAd : String
 //    var KimlikNo : Int
 //    var SicilNo : Int
-//    
+//
 //    init(ad : String, ikinciAd : String? = nil, soyad : String, kimlik : Int, sicilNo : Int )
 //    {
 //        Ad = ad
@@ -340,13 +340,13 @@ import Foundation
 //        KimlikNo = kimlik
 //        SicilNo = sicilNo
 //    }
-//    
+//
 //    func BilgileriYazdır()
 //    {
 //        print("Kullanıcı, Adı : \(Ad) \nİkinci Adı : \(IkinciAd!) \nSoyad : \(SoyAd) \nKimlik Numarası : \(KimlikNo) \nSicil Numarası : \(SicilNo) \n")
 //    }
 //}
-// 
+//
 //var PersonnelList = [Personnel]()
 //
 //var person1 = Personnel(ad: "Eda",ikinciAd: "Erdem" ,soyad: "Ölmez", kimlik: 123123, sicilNo: 12312)
@@ -365,3 +365,28 @@ import Foundation
 //    i.BilgileriYazdır()
 //}
 //
+
+
+enum Cinsiyet : String
+{
+ case Erkek
+    case Kadin = "E"
+    case defaul
+}
+
+
+var deneme = Cinsiyet.defaul
+if(deneme == Cinsiyet.Erkek)
+{
+    print("Erkek Resmi")
+}
+else if (deneme == Cinsiyet.Kadin)
+{
+    print("Kadın Resmi")
+}
+else
+{
+    print("Rasgele resim oluştur.")
+}
+
+print(Cinsiyet.Kadin.rawValue)
