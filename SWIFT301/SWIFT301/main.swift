@@ -476,3 +476,9 @@ import Foundation
 ////private (sadece tanımlandığı entity için geçerli), en kısıtlı erişim belirleyici.
 //
 //
+
+
+// otomatik refans sayacı, yapıya bakar projede ne kadar referansı var eğer 0 a düşerse bellekten nesneyi düşürür.
+
+//deinit fonksiyonuna takılırsa, referans sayısı 0 a düştüğü anlamına gelir. bizim çağırdığımız veya çalıştırabildiğimiz bir fonksiyon değil.
+//class içerisinde deinit yazarsak, nesne bellekten düşmeden önce ne yapmamız gerektiğini belirtmiş oluruz.
