@@ -423,7 +423,7 @@ import Foundation
 //    var Name : String
 //    var Surname : String
 //    var Salary : Int
-//    
+//
 //    init(name : String, surname : String, salary : Int){
 //        self.Name = name
 //        self.Surname = surname
@@ -440,3 +440,39 @@ import Foundation
 //{
 //    var department : String?
 //}
+
+//Protocol
+//
+//protocol IPersonProtocol
+//{
+//    func IslemYap()
+//}
+//
+//class PersonService : IPersonProtocol
+//{
+//    func IslemYap()
+//    {
+//        print("Fuata selam olsun")
+//
+//    }
+//}
+//
+//var personService = PersonService()
+//
+//personService.IslemYap()
+//
+//
+//
+////Access modifieeeers
+//
+//// open (projenin her yerinden)
+//
+//// public  (opendan farkı structlarda kullanılabilir, sadece tanımlandığı targetta kullanılabilir)
+//
+////internal (sadece tanımlandığı target içerisinden erişilebilir, açılan tüm fonk. class vs. varsayılanı internaldir)
+//
+//// fileprivate sadece tanımlandığı dosya içerisinden kullanılır,
+//
+////private (sadece tanımlandığı entity için geçerli), en kısıtlı erişim belirleyici.
+//
+//
