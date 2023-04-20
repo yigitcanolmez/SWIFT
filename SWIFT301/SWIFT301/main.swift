@@ -365,28 +365,78 @@ import Foundation
 //    i.BilgileriYazdır()
 //}
 //
+//
+//
+//enum Cinsiyet : String
+//{
+// case Erkek
+//    case Kadin = "E"
+//    case defaul
+//}
+//
+//
+//var deneme = Cinsiyet.defaul
+//if(deneme == Cinsiyet.Erkek)
+//{
+//    print("Erkek Resmi")
+//}
+//else if (deneme == Cinsiyet.Kadin)
+//{
+//    print("Kadın Resmi")
+//}
+//else
+//{
+//    print("Rasgele resim oluştur.")
+//}
+//
+//print(Cinsiyet.Kadin.rawValue)
 
-
-enum Cinsiyet : String
-{
- case Erkek
-    case Kadin = "E"
-    case defaul
-}
-
-
-var deneme = Cinsiyet.defaul
-if(deneme == Cinsiyet.Erkek)
-{
-    print("Erkek Resmi")
-}
-else if (deneme == Cinsiyet.Kadin)
-{
-    print("Kadın Resmi")
-}
-else
-{
-    print("Rasgele resim oluştur.")
-}
-
-print(Cinsiyet.Kadin.rawValue)
+//
+//class Square : Shape
+//{
+//    var kenar : Int
+//
+//    init(k : Int, a : Int)
+//    {
+//        kenar = k
+//        super.init()
+//    }
+//
+//}
+//
+//class Shape
+//{
+//    var alan : Int?
+//
+//    init()
+//    {
+//
+//    }
+//    init(alan: Int)
+//    {
+//        self.alan = alan
+//    }
+//}
+//
+//class Person
+//{
+//    var Name : String
+//    var Surname : String
+//    var Salary : Int
+//    
+//    init(name : String, surname : String, salary : Int){
+//        self.Name = name
+//        self.Surname = surname
+//        self.Salary = salary
+//    }
+//}
+//
+//class Mudur : Person
+//{
+//    var EkipListe = [Person]()
+//}
+//
+//class MudurYardimcisi : Mudur
+//{
+//    var department : String?
+//}
