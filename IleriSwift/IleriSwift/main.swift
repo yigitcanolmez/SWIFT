@@ -147,3 +147,18 @@ import Foundation
 //    var list = [T]()
 //    return list
 //}
+class C : A
+{
+    func f1()
+    {
+        print("C f1")
+    }
+}
+
+class A
+{
+    func f1()
+    {
+        print("A f1")
+    }
+}
